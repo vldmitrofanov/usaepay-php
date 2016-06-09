@@ -14,9 +14,9 @@
 //
 
 // Change this path to the location you have save usaepay.php to
-include "./usaepay.php";
+include "./src/umTransaction.php";
  
-$tran=new umTransaction;
+$tran=new USAePay\umTransaction;
  
 $tran->key="897asdfjha98ds6f76324hbmnBZc9769374ybndfs876";
 $tran->usesandbox=true;
@@ -47,5 +47,4 @@ if($tran->ProcessQuickSale())
 	echo "<b>Card Declined</b> (" . $tran->result . ")<br>";
 	echo "<b>Reason:</b> " . $tran->error . "<br>";	
 	if(@$tran->curlerror) echo "<b>Curl Error:</b> " . $tran->curlerror . "<br>";	
-}		
- ?>
+}

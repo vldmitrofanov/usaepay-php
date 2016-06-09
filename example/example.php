@@ -10,10 +10,10 @@
 //
 
 // Change this path to the location you have save usaepay.php to
-include "./usaepay.php";
+include "./src/umTransaction.php";
 
 // Instantiate USAePay client object
-$tran=new umTransaction;
+$tran=new USAePay\umTransaction;
 
 // Merchants Source key must be generated within the console
 $tran->key="897asdfjha98ds6f76324hbmnBZc9769374ybndfs876";

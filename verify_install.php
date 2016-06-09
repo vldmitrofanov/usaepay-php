@@ -15,7 +15,7 @@
 
 
 // Change this path to match the location of your usaepay.php file
-include "/home/usaepay-php/usaepay.php";
+include "src/umTransaction.php";
 
 
 $tran=new umTransaction();
@@ -27,5 +27,3 @@ $tran=new umTransaction();
 //$tran->cabundle='/usr/share/curl/curl-ca-bundle.crt';
 
 $tran->Test();
-
-?>
