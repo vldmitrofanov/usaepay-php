@@ -1,4 +1,7 @@
 <?php
+
+namespace USAePay;
+
 // USAePay PHP Library.
 //	v1.7.1
 //
