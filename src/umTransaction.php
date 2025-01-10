@@ -1199,6 +1199,8 @@ class umTransaction {
 
 		//init the connection
 		$ch = curl_init($url);
+		/*
+  		// This doesn't work with PHP 8.3
 		if(!is_resource($ch))
 		{
 			$this->result="Error";
@@ -1207,6 +1209,7 @@ class umTransaction {
 			$this->errorcode=10131;
 			return false;
 		}
+		*/
 
 		// set some options for the connection
 		curl_setopt($ch,CURLOPT_HEADER, 1);
